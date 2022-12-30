@@ -1,0 +1,76 @@
+/* RESET, FONTS, VARIABLES */
+@font-face {
+    font-family: 'raleway';
+    src: url('./asset-fontRaleway.ttf');
+}
+
+@font-face {
+    font-family: 'unbounded';
+    src: url('./asset-fontUnbounded.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'raleway';
+}
+
+/* MAIN */
+body {
+    /* background-color: #191919; */
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 51% 79%, hsla(202, 77%, 20%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 20%, hsla(195, 70%, 30%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(210, 53%, 31%, 1) 0px, transparent 50%),
+        radial-gradient(at 82% 68%, hsla(240, 100%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(184, 58%, 13%, 1) 0px, transparent 50%);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+}
+
+/* SECTIONS */
+.panel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+span.category {
+    font-weight: bold;
+}
+
+#purchase {
+    background-color: rgba(0, 0, 0, 0.202);
+}
+
+.label {
+    font-weight: normal;
+    font-size: 3rem;
+    user-select: none;
+}
+
+.output {
+    font-size: 6rem;
+    font-family: 'unbounded';
+}
+
+
+/* CORRECTIONS */
+.label,
+.output,
+button {
+    transform: translateY(-6vh);
+}
